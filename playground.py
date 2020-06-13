@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 # Playground for using RabbitMQ with Python (using Pika and Celery)
 
@@ -9,7 +9,7 @@ from celery import Celery
 
 # playground
 def main():
-    print(pika)
+    pass
 
 
 if __name__ == "__main__":
