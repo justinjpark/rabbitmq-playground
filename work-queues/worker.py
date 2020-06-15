@@ -24,7 +24,7 @@ def worker():
         message = body.decode("utf-8") 
         print(f'Successfully received message! (body={message})')
         time.sleep(message.count('.')) # pretend work is being done for task
-        print (f'. . .completed task. (body={message})')
+        print (f'. . .completed task. (message={message})')
         
         # Using this code, we can ensure that even if you kill a worker using CTRL+C while it is processing a message, 
         # nothing will be lost. Soon after the worker dies all unacknowledged messages will be redelivered.
